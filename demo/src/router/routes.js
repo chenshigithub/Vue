@@ -1,8 +1,8 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Hello from '@/components/Hello'
-import {firstPage} from '../components/firstPage'
-import {secondPage} from '../pages/secondPage'
+import firstPage from '../components/firstPage'
+import secondPage from '../pages/secondPage'
 
 Vue.use(Router)
 
@@ -14,12 +14,12 @@ export default new Router({
       component: Hello
     },{
     	path:'/first',
-    	name:'first',
-    	components:firstPage
+    	name:'hello1',
+    	component:firstPage
     },{
     	path:'/second',
     	name:'second',
-    	components:secondPage
+    	component:secondPage
     }
   ]
 })
